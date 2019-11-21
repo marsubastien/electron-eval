@@ -126,7 +126,7 @@ window.addEventListener('submit', function(ev) {
   }
   if(form.id == 'startQuiz') {
     // sauvegarde joueur
-    ev.preventDefault();    
+    //ev.preventDefault();    
     fs.readFile(filePath + "/data.json", "utf8",  (err, data)  => {
     if (err) throw err;
     let schema = JSON.parse(data); 
