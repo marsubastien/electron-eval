@@ -75,9 +75,10 @@ window.addEventListener('submit', function(ev) {
     let counter = json.questions.length;
     console.log(step);    
     if(next > counter){
+
       // Page résultat
       // utilisation pdf-node-creator
-      alert('Greaaaat');
+      alert('Félicitaion : vous avez' + + 'sur ' + counter );
     }
 
     else {
@@ -129,6 +130,7 @@ window.addEventListener('submit', function(ev) {
     fs.readFile(filePath + "/data.json", "utf8",  (err, data)  => {
     if (err) throw err;
     let schema = JSON.parse(data); 
+    console.log(schema);
     //const store = new Store({schema});   
     });
   }
